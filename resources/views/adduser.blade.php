@@ -7,23 +7,7 @@
 
 @section('pagecontent')
 
-<!-- 
-  <body class="nav-md">
-    <div class="container body">
-      <div class="main_container">
-        <div class="col-md-3 left_col">
-          <div class="left_col scroll-view">
 
-
-            <div class="clearfix"></div>
-
-          </div>
-        </div>
-
-
-        <div class="right_col" role="main">
-          <div class="">
- -->
             <div class="clearfix"></div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
@@ -40,60 +24,43 @@
                   </div>
                   <div class="x_content">
                     <br />
-                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post" action="AddUsers"> 
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="UfirstName">First Name <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="UfirstName" name="UfirstName" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="lastname">Last Name <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
+                     
+               
+                   
+
                       <div class="form-group">
-                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Middle Name / Initial</label>
+                        <label for="NICnumber" class="control-label col-md-3 col-sm-3 col-xs-12">NIC number</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <div id="gender" class="btn-group" data-toggle="buttons">
-                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="male"> &nbsp; Male &nbsp;
-                            </label>
-                            <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                              <input type="radio" name="gender" value="female"> Female
-                            </label>
-                          </div>
+                          <input id="NICnumber" class="form-control col-md-7 col-xs-12" type="text" name="NICnumber">
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label for="NIC-number" class="control-label col-md-3 col-sm-3 col-xs-12">NIC number</label>
+                        <label for="contactno" class="control-label col-md-3 col-sm-3 col-xs-12">Contact number</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="NIC-number" class="form-control col-md-7 col-xs-12" type="text" name="NIC-number">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                          <input id="contactno" class="date-picker form-control col-md-7 col-xs-12" type="text" name="contactno">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="email-address" class="control-label col-md-3 col-sm-3 col-xs-12">Email</label>
+                        <label for="email" class="control-label col-md-3 col-sm-3 col-xs-12">Email</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="email-address" class="form-control col-md-7 col-xs-12" type="text" name="email-address">
+                          <input id="email" class="form-control col-md-7 col-xs-12" type="text" name="email">
                         </div>
                       </div>
 
@@ -104,13 +71,28 @@
                         </div>
                       </div>
 
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="gender">sex <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="gender" name="gender" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
 
 
 
                       <div class="form-group">
-                        <label for="user-name" class="control-label col-md-3 col-sm-3 col-xs-12">User name</label>
+                        <label for="user_type" class="control-label col-md-3 col-sm-3 col-xs-12">User type</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="user-name" class="form-control col-md-7 col-xs-12" type="text" name="user-name">
+                          <input id="user_type" class="form-control col-md-7 col-xs-12" type="text" name="user_type">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="username" class="control-label col-md-3 col-sm-3 col-xs-12">User name</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="username" class="form-control col-md-7 col-xs-12" type="text" name="username">
                         </div>
                       </div>
 
@@ -134,6 +116,13 @@
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                           <button class="btn btn-primary" type="button">Cancel</button>
               <button class="btn btn-primary" type="reset">Reset</button>
+
+
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+
+        {{csrf_field()}}
+
+        
                           <button type="submit" class="btn btn-success">Submit</button>
                         </div>
                       </div>

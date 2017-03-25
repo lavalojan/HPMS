@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('layout/home');
 });
+// Route::get('/SaveUser', 'addUserController@store';
 
 Route::get('/addUser', function(){
 	return view('adduser');
@@ -34,3 +35,18 @@ Route::get('/login', function(){
 Route::get('/treatment', function(){
 	return view('treatment');
 });
+
+Route::get('/users', function () {
+    return view('userDetails');
+});
+
+
+Route::post('/StoreNewPatients', 'AddPatientController@Store');
+Route::post('/AddUsers', 'AddUserController@Store');
+
+Route::post('/SaveHistory', 'AddHistoryController@Store');
+
+
+
+
+//Route::get('/userDetails', 'AddUserController@userDetails');

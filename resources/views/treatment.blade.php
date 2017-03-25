@@ -31,21 +31,21 @@
                   </div>
                   <div class="x_content">
                     <br />
-                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="POST" action="SaveHistory">
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patient-id">Patient id <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patient_id">Patient id <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="patient-id" name="patient-id" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="patient_id" name="patient_id" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patient-name">patient Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patientname">patient Name <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="patient-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="patientname" name="patientname" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                        <div class="form-group">
@@ -53,7 +53,7 @@
                         </label>
 
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="description" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="description" class="form-control col-md-7 col-xs-12" name="description">
                         </div>
                       </div>
 
@@ -61,15 +61,22 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="drugs">Drugs <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="drugs" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="drugs" name="drugs" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
 
                       <div class="form-group">
-                        <label for="blood-pressure" class="control-label col-md-3 col-sm-3 col-xs-12">Blood preasure</label>
+                        <label for="bloodpressure" class="control-label col-md-3 col-sm-3 col-xs-12">Blood preasure</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="blood-pressure" class="form-control col-md-7 col-xs-12" type="text" name="blood-pressure">
+                          <input id="bloodpressure" class="form-control col-md-7 col-xs-12" type="text" name="bloodpressure">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="date" class="control-label col-md-3 col-sm-3 col-xs-12">DATE</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="date" class="form-control col-md-7 col-xs-12" type="date" name="date">
                         </div>
                       </div>
 
@@ -85,6 +92,13 @@
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                           <button class="btn btn-primary" type="button">Cancel</button>
               <button class="btn btn-primary" type="reset">Reset</button>
+
+
+
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" >
+
+        {{csrf_field()}}
+
                           <button type="submit" class="btn btn-success">Save</button>
                         </div>
                       </div>
