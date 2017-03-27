@@ -1,5 +1,6 @@
 @extends('layout.home')
 
+
 @section('pagecontent')
 
 
@@ -42,6 +43,13 @@
                       </div>
 
                       <div class="form-group">
+                        <label for="date" class="control-label col-md-3 col-sm-3 col-xs-12">DATE</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="date" class="form-control col-md-7 col-xs-12" type="date" name="date">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patientname">patient Name <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -49,38 +57,34 @@
                         </div>
                       </div>
                        <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">Description <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="caseHistory">case History <span class="required">*</span>
                         </label>
 
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <textarea type="text" id="description" class="form-control col-md-7 col-xs-12" name="description"></textarea>
-                        <!--   <input type="text" id="description" class="form-control col-md-7 col-xs-12" name="description"> -->
+                          <input type="text" id="caseHistory" class="form-control col-md-7 col-xs-12" name="caseHistory">
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="drugs">Drugs <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="medication">Medication <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <textarea type="text" id="drugs" name="drugs" required="required" class="form-control col-md-7 col-xs-12"></textarea>
-                          <!-- <input type="text" id="drugs" name="drugs" required="required" class="form-control col-md-7 col-xs-12"> -->
+                          <input type="text" id="medication" name="medication" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
 
                       <div class="form-group">
-                        <label for="bloodpressure" class="control-label col-md-3 col-sm-3 col-xs-12">Blood preasure</label>
+                        <label for="bloodpressure" class="control-label col-md-3 col-sm-3 col-xs-12">Note</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="bloodpressure" class="form-control col-md-7 col-xs-12" type="text" name="bloodpressure">
+                        <textarea id="note" class="form-control col-md-7 col-xs-12" name="note">
+                          
+                        </textarea>
+                          
                         </div>
                       </div>
 
-                      <div class="form-group">
-                        <label for="date" class="control-label col-md-3 col-sm-3 col-xs-12">DATE</label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="date" class="form-control col-md-7 col-xs-12" type="date" name="date">
-                        </div>
-                      </div>
+                      
 
                    
                      
@@ -96,10 +100,10 @@
               <button class="btn btn-primary" type="reset">Reset</button>
 
 
-
+<!-- 
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" >
 
-        {{csrf_field()}}
+        {{csrf_field()}} -->
 
                           <button type="submit" class="btn btn-success">Save</button>
                         </div>
