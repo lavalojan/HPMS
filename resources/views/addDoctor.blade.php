@@ -35,22 +35,16 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post" action="AddUsers"> 
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post" action="AddDoctor"> 
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="UfirstName">First Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Name <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="UfirstName" name="UfirstName" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="name" name="name" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="lastname">Last Name <span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
+
                      
                
                    
@@ -90,15 +84,14 @@
                         </div>
                       </div>
 
-
-
-
-                      <div class="form-group">
-                        <label for="user_type" class="control-label col-md-3 col-sm-3 col-xs-12">User type</label>
+                       <div class="form-group">
+                        <label for="Profile" class="control-label col-md-3 col-sm-3 col-xs-12">Profile</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="user_type" class="form-control col-md-7 col-xs-12" type="text" name="user_type">
+                          <input id="Profile" class="form-control col-md-7 col-xs-12" type="text" name="Profile">
                         </div>
                       </div>
+
+
 
                       <div class="form-group">
                         <label for="username" class="control-label col-md-3 col-sm-3 col-xs-12">User name</label>
@@ -108,16 +101,26 @@
                       </div>
 
                        <div class="form-group">
-                        <label for="password1" class="control-label col-md-3 col-sm-3 col-xs-12">Password</label>
+                        <label for="password" class="control-label col-md-3 col-sm-3 col-xs-12">Password</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="password1" class="form-control col-md-7 col-xs-12" type="text" name="password1">
+                          <input id="password" class="form-control col-md-7 col-xs-12" type="text" name="password">
                         </div>
                       </div>
 
                        <div class="form-group">
-                        <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">Confirm Password</label>
+                        <label for="Department" class="control-label col-md-3 col-sm-3 col-xs-12">Department</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="password2" class="form-control col-md-7 col-xs-12" type="text" name="password2">
+                          <input id="Department" class="form-control col-md-7 col-xs-12" type="text" name="Department">
+<!--                         <SELECT id="Department" name="Department">
+
+                            <OPTION Value="Under 16">Under 16</OPTION>
+                            <OPTION Value="16 to 25">16 to 25</OPTION>
+                            <OPTION Value="26 to 40">26 to 40</OPTION>
+                            <OPTION Value="40 to 60">40 to 60</OPTION>
+                            <OPTION Value="Over 60">Over 60</OPTION>
+
+                        </SELECT> -->
+
                         </div>
                       </div>
 

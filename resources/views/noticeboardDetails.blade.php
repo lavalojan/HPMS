@@ -3,7 +3,7 @@
 
   <div class="right_col" role="main">
           <div class="">
-            <div class="page-title">
+<!--             <div class="page-title">
               <div class="title_left">
                 <h3>Projects <small>Listing design</small></h3>
               </div>
@@ -18,21 +18,21 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="clearfix"></div>
 
             <div class="row">
               <div class="col-md-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Projects</h2>
+                    <h2>Notice Board</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <ul class="dropdown-menu" role="menu">
-                          <li><a href="registerNewPatient">Add new Patient</a>
+                          <li><a href="addnoticeboard">add Notice</a>
                           </li>
                           <li><a href="#">Settings 2</a>
                           </li>
@@ -52,27 +52,25 @@
 	<thead>
 		<tr>
 			<th style="width:50px;">#</th>
-			<th>User id</th>
-			<th>First Name</th>
-			<th>Last Name</th>
-			
-			<th>NIC</th>
-      <th>Option</th>
-			<!-- <th>ACTION</th> -->
+			<th>Title</th>
+			<th>Description</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Options</th>
+		
 		</tr>
 	</thead>
 	<tbody>
 		<?php $count_val=0; ?>
-	    @foreach($result_patient as $arrival) 
+	    @foreach($result_noticeboard as $arrival) 
 	    <?php  $count_val+=1; ?>
         <tr>
 			<td><?php echo $count_val.'.'; ?></td>
-			<td>{{$arrival->patinet_id}}</td>
-			<td>{{$arrival->firstName}}</td>
-			<td>{{$arrival->lastName}}</td>
-			<td>{{$arrival->NIC_number}}</td>
-
-      <td>
+			<td>{{$arrival->Title}}</td>
+			<td>{{$arrival->Description}}</td>
+      <td>{{$arrival->Startdate}}</td>
+      <td>{{$arrival->Enddate}}</td>
+			<td>
       <a class="btn btn-default submit" href="edit">Edit</a>
       <a class="btn btn-danger submit" href="delete">Delete</a>
         
@@ -80,6 +78,8 @@
 
 		</tr>
         @endforeach
+
+
 		
 	</tbody>
 </table>

@@ -1,7 +1,6 @@
  @extends("layout.home")
  @section('pagecontent')
-
-  <div class="right_col" role="main">
+ <div class="right_col" role="main">
           <div class="">
             <div class="page-title">
               <div class="title_left">
@@ -32,7 +31,7 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <ul class="dropdown-menu" role="menu">
-                          <li><a href="registerNewPatient">Add new Patient</a>
+                          <li><a href="addCashier">add Cashier</a>
                           </li>
                           <li><a href="#">Settings 2</a>
                           </li>
@@ -52,30 +51,27 @@
 	<thead>
 		<tr>
 			<th style="width:50px;">#</th>
-			<th>User id</th>
-			<th>First Name</th>
-			<th>Last Name</th>
-			
-			<th>NIC</th>
-      <th>Option</th>
+			<th>Name</th>
+			<th>Emal</th>
+			<th> NIC</th>
+			<th>user name</th>
+      <th>Profile</th>
 			<!-- <th>ACTION</th> -->
 		</tr>
 	</thead>
 	<tbody>
 		<?php $count_val=0; ?>
-	    @foreach($result_patient as $arrival) 
+	    @foreach($result_cashier as $arrival) 
 	    <?php  $count_val+=1; ?>
         <tr>
 			<td><?php echo $count_val.'.'; ?></td>
-			<td>{{$arrival->patinet_id}}</td>
-			<td>{{$arrival->firstName}}</td>
-			<td>{{$arrival->lastName}}</td>
-			<td>{{$arrival->NIC_number}}</td>
-
+			<td>{{$arrival->Name}}</td>
+			<td>{{$arrival->Email}}</td>
+			<td>{{$arrival->NICno}}</td>
+			<td>{{$arrival->Profile}}</td>
       <td>
-      <a class="btn btn-default submit" href="edit">Edit</a>
-      <a class="btn btn-danger submit" href="delete">Delete</a>
-        
+        <a class="btn btn-default submit" href="edit">Edit</a>
+        <a class="btn btn-danger submit" href="delete">Delete</a>
       </td>
 
 		</tr>
@@ -90,5 +86,4 @@
             </div>
           </div>
         </div>
-
-@endsection
+            @endsection

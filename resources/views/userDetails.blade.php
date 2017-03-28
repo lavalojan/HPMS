@@ -55,6 +55,7 @@
 			<th>Last Name</th>
 			<th>contact number</th>
 			<th>user name</th>
+      <th>option</th>
 			<!-- <th>ACTION</th> -->
 		</tr>
 	</thead>
@@ -68,6 +69,10 @@
 			<td>{{$arrival->UlastName}}</td>
 			<td>{{$arrival->phoneNumber}}</td>
 			<td>{{$arrival->userName}}</td>
+      <td>
+        <a class="btn btn-default submit" href="edit">Edit</a>
+        <a class="btn btn-danger submit" href="delete">Delete</a>
+      </td>
 
 		</tr>
         @endforeach

@@ -32,7 +32,7 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
                         <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
+                          <li><a href="/addprescription">Add prescription</a>
                           </li>
                           <li><a href="#">Settings 2</a>
                           </li>
@@ -51,10 +51,13 @@
 		<tr>
 			<th style="width:50px;">#</th>
 
-			<th>FRecord</th>
+			<th>Date</th>
 			<th>Patient id</th>
-			<th>description</th>
-			<th>drugs</th>
+			<th>Doctor</th>
+			<th>Case History</th>
+      <th>Medication</th>
+      <th>Note</th>
+      <th>Option</th>
 			<!-- <th>ACTION</th> -->
 		</tr>
 	</thead>
@@ -64,9 +67,17 @@
 	    <?php  $count_val+=1; ?>
         <tr>
 			<td><?php echo $count_val.'.'; ?></td>
-			<td>{{$arrival->recordID}}</td>
-			<td>{{$arrival->preassure}}</td>
-			<td>{{$arrival->drugs}}</td>
+			<td>{{$arrival->Date}}</td>
+			<td>{{$arrival->patientId}}</td>
+			<td>{{$arrival->doctorName}}</td>
+      <td>{{$arrival->CaseHistory}}</td>
+      <td>{{$arrival->Medication}}</td>
+      <td>{{$arrival->Note}}</td>
+      <td>
+        
+        <a class="btn btn-default submit" href="edit">Edit</a>
+        <a class="btn btn-danger submit" href="delete">Delete</a>
+      </td>
 
 		</tr>
         @endforeach

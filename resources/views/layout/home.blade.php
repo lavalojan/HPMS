@@ -35,7 +35,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>HPMS!</span></a>
+              <a href="/homepage" class="site_title"><i class="fa fa-paw"></i> <span>HPMS!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -43,11 +43,11 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="images/admin.jpg" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>User1</h2>
+                <h2>Admin</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -57,15 +57,20 @@
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>General</h3>
+                <!-- <h3>General</h3> -->
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="index.html">Dashboard</a></li>
-                      <li><a href="index2.html">Dashboard2</a></li>
-                      <li><a href="index3.html">Dashboard3</a></li>
-                    </ul>
-                  </li>
+<!--                   <li><a ><i class="fa fa-home"></i> Users <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu"> -->
+                      <li><a href="department">Department</a></li>
+                      <li><a href="receptionist">Receptionist</a></li>
+                      <li><a href="cashier">Cashier</a></li>
+                      <li><a href="doctors">Doctor</a></li>
+                      <li><a href="patients">Patient details</a></li>
+                      <li><a href="noticeboard">Notice Board</a></li>
+                      <li><a href="prescription">Prescription</a></li>
+                    
+               <!--      </ul>
+                  </li> -->
                                   
                   
                 </ul>
@@ -106,29 +111,29 @@
                 <li class="">
                   
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/img.jpg" alt="">John Doe
+                    <img src="images/admin.jpg" alt="">Admin
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profile</a></li>
+                    <li><a href="profile"> Profile</a></li>
                     <!-- <li>
                       <a href="javascript:;">
                         <span class="badge bg-red pull-right">50%</span>
                         <span>Settings</span>
                       </a>
                     </li> -->
-                    <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+<!--                     <li><a href="javascript:;">Help</a></li> -->
+                    <li><a href="login"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
 
-                <li role="presentation" class="dropdown">
+               <!--  <li role="presentation" class="dropdown">
                   <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-envelope-o"></i>
                     <span class="badge bg-green">6</span>
                   </a>
-                  <!--  -->
-                </li>
+                
+                </li> -->
               </ul>
             </nav>
           </div>

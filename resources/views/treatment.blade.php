@@ -34,6 +34,13 @@
                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="POST" action="SaveHistory">
 
                       <div class="form-group">
+                        <label for="date" class="control-label col-md-3 col-sm-3 col-xs-12">DATE</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="date" class="form-control col-md-7 col-xs-12" type="date" name="date">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patient_id">Patient id <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -42,45 +49,45 @@
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patientname">patient Name <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="doctorNmae">Doctor Name <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="patientname" name="patientname" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" id="doctorNmae" name="doctorNmae" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                        <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">Description <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="caseHistory">Case History <span class="required">*</span>
                         </label>
 
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <textarea type="text" id="description" class="form-control col-md-7 col-xs-12" name="description"></textarea>
+                        <textarea type="text" id="caseHistory" class="form-control col-md-7 col-xs-12" name="caseHistory"></textarea>
                         <!--   <input type="text" id="description" class="form-control col-md-7 col-xs-12" name="description"> -->
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="drugs">Drugs <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="medication">medication
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <textarea type="text" id="drugs" name="drugs" required="required" class="form-control col-md-7 col-xs-12"></textarea>
+                        <textarea type="text" id="medication" name="medication" class="form-control col-md-7 col-xs-12"></textarea>
                           <!-- <input type="text" id="drugs" name="drugs" required="required" class="form-control col-md-7 col-xs-12"> -->
                         </div>
                       </div>
-
-
                       <div class="form-group">
-                        <label for="bloodpressure" class="control-label col-md-3 col-sm-3 col-xs-12">Blood preasure</label>
+                        <label for="date" class="control-label col-md-3 col-sm-3 col-xs-12">Note</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="bloodpressure" class="form-control col-md-7 col-xs-12" type="text" name="bloodpressure">
+                          <input id="note" class="form-control col-md-7 col-xs-12" type="text" name="note">
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label for="date" class="control-label col-md-3 col-sm-3 col-xs-12">DATE</label>
+                        <label for="bloodpressure" class="control-label col-md-3 col-sm-3 col-xs-12">Preasure</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="date" class="form-control col-md-7 col-xs-12" type="date" name="date">
+                          <input id="pressure" class="form-control col-md-7 col-xs-12" type="text" name="pressure">
                         </div>
                       </div>
+
+
 
                    
                      
