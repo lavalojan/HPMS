@@ -35,6 +35,8 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
+
+                  
                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post" action="AddReceptionist"> 
 
                       <div class="form-group">

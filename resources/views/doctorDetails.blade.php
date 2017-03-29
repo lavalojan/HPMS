@@ -24,7 +24,7 @@
               <div class="col-md-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Projects</h2>
+                    <h2>Doctor Details</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -70,8 +70,8 @@
 			<td>{{$arrival->NICno}}</td>
 			<td>{{$arrival->Profile}}</td>
       <td>
-        <a class="btn btn-default submit" href="edit">Edit</a>
-        <a class="btn btn-danger submit" href="delete">Delete</a>
+        <a class="btn btn-default submit" href="#">Edit</a>
+        <a class="btn btn-danger submit" href="#">Delete</a>
       </td>
 
 		</tr>

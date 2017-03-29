@@ -17,20 +17,18 @@ class AddHistoryController extends Controller{
         $patient_id= $request->patient_id;
 
         $unique_id=time();
-        $drugs=$request->drugs;
-        $bloodpressure=$request->bloodpressure;
-        $patientname= $request->patientname;
-        $description=$request->description;
+        $note=$request->note;
+        $pressure=$request->pressure;
+        $patientId= $request->patientId;
+        $medication=$request->medication;
         $date=$request->date;
+        $caseHistory=$request->caseHistory;
+        $doctorName=$request->doctorName;
 
-
-        // $userlevel= $request->userlevel;
-        // $password=md5($password);
-        //$dob=$request->dob;
         
+        $sql_newuser="INSERT INTO `disease_details`(`recordID`, `doctorName`, `PatientID`, `CaseHistory`, `Medication`,`Note`, `preassure`, `Date`) VALUES (?,?,?,?,?,?,?,?)";
 
-        $sql_newuser="INSERT INTO `disease_details`(`recordID`, `doctorID`, `PatientID`, `discription`, `drugs`,`preassure`, `Date`) VALUES (?,?,?,?,?,?,?)";
-        $val_newuser=[$unique_id,$patient_id,$patient_id,$description,$drugs,$bloodpressure, $date];
+        $val_newuser=[$unique_id,$doctorName,$patient_id,$caseHistory,$medication,$note,$pressure, $date];
         DB::insert($sql_newuser,$val_newuser);
 
         $sql_patient_history="select * from disease_details";

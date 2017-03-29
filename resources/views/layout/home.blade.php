@@ -68,6 +68,7 @@
                       <li><a href="patients">Patient details</a></li>
                       <li><a href="noticeboard">Notice Board</a></li>
                       <li><a href="prescription">Prescription</a></li>
+                      <li><a href="payment">Payment</a></li>
                     
                <!--      </ul>
                   </li> -->

@@ -67,8 +67,8 @@
 			<td>{{$arrival->Name}}</td>
 			<td>{{$arrival->Description}}</td>
 			<td>
-      <a class="btn btn-default submit" href="edit">Edit</a>
-      <a class="btn btn-danger submit" href="delete">Delete</a>
+      <a class="btn btn-default submit" href="#">Edit</a>
+      <a class="btn btn-danger submit" href="#">Delete</a>
         
       </td>
 

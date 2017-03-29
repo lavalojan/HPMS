@@ -28,10 +28,6 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-
-                    <!-- <p>Simple table with project listing with progress and editing options</p>
- -->
-
 <table id="simple-table" class="table table-striped table-bordered table-hover dataTable no-footer">
 	<thead>
 		<tr>
@@ -55,8 +51,8 @@
 			<td>{{$arrival->NICno}}</td>
 			<td>{{$arrival->Profile}}</td>
       <td>
-        <a class="btn btn-default submit" href="edit">Edit</a>
-        <a class="btn btn-danger submit" href="delete">Delete</a>
+        <a class="btn btn-default submit" href="#">Edit</a>
+        <a class="btn btn-danger submit" href="#">Delete</a>
       </td>
 
 		</tr>
